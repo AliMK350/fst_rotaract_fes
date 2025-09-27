@@ -1,0 +1,366 @@
+/*******************************
+  ROTARACT — PINK THEME (FULL CSS)
+  Replace your existing stylesheet with this.
+*******************************/
+
+/* -------------------------
+   Theme variables (single :root)
+   ------------------------- */
+:root{
+  /* Primary: Pretty Rosy Pink */
+  --bs-primary-rgb: 248, 144, 158;
+  --bs-primary: #df0e88;
+
+  /* Light: Soft very-light pink */
+  --bs-light-rgb: 253, 226, 230;
+  --bs-light: #FDE2E6;
+
+  /* Secondary / dark / white */
+  --bs-secondary: #ff008c;
+  --bs-dark-rgb: 33, 37, 41;
+  --bs-dark: #212529;
+  --bs-white-rgb: 255,255,255;
+  --bs-white: #ffffff;
+
+  /* Utility */
+  --transition-fast: .35s;
+}
+
+/* -------------------------
+   Global resets & helpers
+   ------------------------- */
+* { box-sizing: border-box; }
+html,body { height:100%; margin:0; padding:0; font-family: "Work Sans", sans-serif; color:var(--bs-dark); }
+
+a { text-decoration: none; color: inherit; }
+
+/* Ensure Bootstrap-like utilities that used to be beige now use our pinks */
+.bg-light { background-color: var(--bs-light) !important; }
+.text-light { color: var(--bs-light) !important; }
+.btn-light { background-color: var(--bs-light) !important; color: var(--bs-dark) !important; border-color: var(--bs-light) !important; }
+
+/* Primary / accent */
+.text-primary { color: var(--bs-primary) !important; }
+.bg-primary { background-color: var(--bs-primary) !important; color: var(--bs-white) !important; }
+
+/* Buttons default */
+.btn {
+  position: relative;
+  transition: all var(--transition-fast);
+  border-radius: .35rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Primary button style (pink) */
+.btn-primary {
+  background: var(--bs-primary);
+  color: var(--bs-white);
+  border: 2px solid var(--bs-primary);
+  box-shadow: none;
+}
+
+/* Hover/focus states */
+.btn-primary:hover,
+.btn-primary:focus {
+  background: linear-gradient(180deg, var(--bs-primary), var(--bs-secondary));
+  border-color: var(--bs-secondary);
+  color: var(--bs-white);
+  transform: translateY(-1px);
+}
+
+/* Light button variant (soft pink background) */
+.btn-light {
+  background: var(--bs-light);
+  border: 2px solid rgba(var(--bs-white-rgb), .12);
+}
+.btn-light:hover { background: var(--bs-primary); color: var(--bs-white); border-color: var(--bs-primary); }
+
+/* Square button helpers */
+.btn-square { width:38px; height:38px; padding:0; display:flex; align-items:center; justify-content:center; }
+.btn-sm-square { width:32px; height:32px; }
+.btn-lg-square { width:48px; height:48px; }
+
+/* Decorative border pseudo-elements for primary buttons (kept from original, but pink) */
+.btn-primary::before,
+.btn-primary::after {
+  position: absolute;
+  content: "";
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  top: -5px;
+  left: -5px;
+  transition: inherit;
+}
+.btn-primary::before { top:-10px; height: calc(100% + 20px); border-left: 2px solid var(--bs-primary); border-right: 2px solid var(--bs-primary); }
+.btn-primary::after  { left:-10px; width: calc(100% + 20px); border-top: 2px solid var(--bs-primary); border-bottom: 2px solid var(--bs-primary); }
+
+/* Dark button decorative borders (keeps contrast) */
+.btn-dark::before, .btn-dark::after {
+  position:absolute; content:""; width:calc(100% + 10px); height:calc(100% + 10px); top:-5px; left:-5px;
+}
+.btn-dark::before { top:-10px; height: calc(100% + 20px); border-left:2px solid var(--bs-dark); border-right:2px solid var(--bs-dark); }
+.btn-dark::after { left:-10px; width: calc(100% + 20px); border-top:2px solid var(--bs-dark); border-bottom:2px solid var(--bs-dark); }
+
+/* Spinner & back-to-top (kept functional) */
+#spinner { opacity:0; visibility:hidden; transition: opacity .5s ease-out, visibility 0s linear .5s; z-index:99999; }
+#spinner.show { visibility:visible; opacity:1; transition: opacity .5s ease-out, visibility 0s linear 0s; }
+.back-to-top { position:fixed !important; display:none; right:45px; bottom:45px; z-index:99; }
+
+/* -------------------------
+   Navbar
+   ------------------------- */
+.container-fluid.bg-white { background: var(--bs-white); }
+.navbar { padding:0; }
+.navbar-brand {
+  display:flex;
+  align-items:center;
+  gap: .6rem;
+  padding: .35rem .8rem;
+  margin-right:0;
+  background: transparent; /* let logo container decide */
+  border-radius: .25rem;
+}
+
+/* If you want navbar-brand with colored background (optional):
+   .navbar-brand.bg-primary { background: var(--bs-primary) !important; }
+*/
+
+/* Brand image sizing helper (keeps brand area compact) */
+.navbar-brand .brand-img {
+  display:inline-block;
+  width: 140px; /* change if needed */
+  height: auto;
+  line-height:0;
+}
+
+/* Nav links */
+.navbar .navbar-nav .nav-link {
+  margin: 0 12px;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--bs-dark);
+  transition: color var(--transition-fast);
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active { color: var(--bs-primary); }
+
+/* Dropdown icons & menu */
+.navbar .dropdown-toggle::after {
+  border: none;
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+.navbar .dropdown-menu { border-radius: .25rem; padding: .25rem 0; }
+.navbar .dropdown-menu .dropdown-item:hover,
+.navbar .dropdown-menu .dropdown-item.active {
+  color: var(--bs-white);
+  background: var(--bs-primary);
+}
+
+/* Navbar button tweaks (small social icons etc) */
+.navbar .btn-primary {
+  border-width: 2px;
+  background: var(--bs-primary);
+  color: var(--bs-white);
+}
+.navbar .btn-primary:hover { background: var(--bs-secondary); border-color: var(--bs-secondary); }
+
+/* Collapse padding control */
+.collapse.navbar-collapse.p-3 { padding: .75rem 1rem !important; }
+
+/* -------------------------
+   Hero / Page header / carousel
+   ------------------------- */
+.hero-header { background: url(../img/uni1.jpg) top left no-repeat; background-size: cover; }
+.header-carousel .owl-nav { position: absolute; right:0; bottom:0; display:flex; gap:.5rem; }
+.header-carousel .owl-nav .owl-prev,
+.header-carousel .owl-nav .owl-next {
+  width:60px; height:60px; display:flex; align-items:center; justify-content:center;
+  font-size:22px; transition: .5s; color:var(--bs-white); background:var(--bs-primary);
+}
+.header-carousel .owl-nav .owl-prev:hover,
+.header-carousel .owl-nav .owl-next:hover { background:var(--bs-secondary); }
+
+/* Page header placeholder */
+.page-header { background: url(../img/page-header.jpg) center center no-repeat; background-size: contain; }
+
+/* -------------------------
+   Service section
+   ------------------------- */
+.service .service-item {
+  background: var(--bs-white);
+  padding: 1.25rem;
+  border-radius: .5rem;
+  transition: box-shadow var(--transition-fast), transform var(--transition-fast);
+  box-shadow: 0 6px 20px rgba(0,0,0,.05);
+}
+@media (min-width: 992px) {
+  .service .service-item.border-lg-end { border-right: 1px solid rgba(var(--bs-dark-rgb), .06); }
+}
+.service .service-item .btn-primary {
+  background: var(--bs-primary);
+  color: var(--bs-white);
+  border-width: 2px;
+}
+.service .service-item .btn-primary:hover { background: var(--bs-secondary); }
+
+/* service icons */
+.service .service-item img { width: 70px; margin-bottom: 20px; }
+
+/* -------------------------
+   Pricing
+   ------------------------- */
+.price .price-item {
+  display:flex; align-items:center; justify-content:space-between;
+  background: rgba(var(--bs-white-rgb), .02);
+  padding: 1rem;
+  border-radius: .5rem;
+}
+
+/* -------------------------
+   Blog
+   ------------------------- */
+.blog .btn-dark {
+  border-width:2px;
+  background: var(--bs-primary);
+  color: var(--bs-white);
+}
+.blog .btn-dark:hover {
+  background: var(--bs-dark);
+  color: var(--bs-white);
+}
+
+/* -------------------------
+   Gallery
+   ------------------------- */
+.gallery .gallery-item { position:relative; overflow:hidden; border-radius:.5rem; }
+.gallery .gallery-item img { transition: transform var(--transition-fast); width:100%; display:block; }
+.gallery .gallery-item:hover img { transform: scale(1.08); }
+.gallery .gallery-icon { position:absolute; display:flex; align-items:center; justify-content:center; top:50%; left:50%; transform:translate(-50%,-50%); background: rgba(0, 0, 0, .6); width:0; height:0; transition: .5s; z-index:1; }
+.gallery .gallery-item:hover .gallery-icon { width:100%; height:100%; }
+.gallery .gallery-icon .btn { opacity:0; transition: .5s; }
+.gallery .gallery-item:hover .gallery-icon .btn { opacity:1; transition-delay:.2s; }
+
+/* -------------------------
+   Team
+   ------------------------- */
+.team { position: relative; padding: 2rem 0; }
+.team::before {
+  position: absolute;
+  content: "";
+  width: 200%;
+  height: 200px;
+  top: 50%;
+  left: -50%;
+  transform: translateY(-50%);
+  margin-top: 1rem;
+  background: var(--bs-primary);
+  opacity: .08;
+}
+.team-item { position: relative; overflow: hidden; border-radius: .5rem; }
+.team-img { overflow:hidden; display:block; }
+.team-item img { transition: transform var(--transition-fast); display:block; width:100%; height:auto; }
+.team-item:hover img { transform: scale(1.05); }
+
+.team-overlay {
+  position: absolute;
+  padding: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  text-align:center;
+  background: rgba(var(--bs-white-rgb), .5);
+  transition: background var(--transition-fast);
+  z-index:1;
+  border-radius: .35rem;
+}
+.team-item:hover .team-overlay { background: rgba(var(--bs-white-rgb), .85); }
+
+/* Team social overlay */
+.team-social {
+  position: absolute; top:0; left:0; width:100%; height:100%; display:flex; align-items:center; justify-content:center;
+  background: rgba(0,0,0,.45); opacity:0; transition: opacity var(--transition-fast);
+}
+.team-item:hover .team-social { opacity:1; }
+.team-social .btn-square { margin:5px; color:var(--bs-white); background:var(--bs-primary); border-radius:50%; }
+.team-social .btn-square:hover { background:var(--bs-secondary); color:var(--bs-white); }
+
+/* -------------------------
+   Testimonial / carousel
+   ------------------------- */
+.testimonial-carousel .owl-item { position: relative; transition: transform var(--transition-fast); }
+.testimonial-carousel .owl-item::before {
+  position:absolute; content:"\f10d"; font-family:"Font Awesome 5 Free"; font-weight:900; font-size:300px; top:50%; left:50%; transform:translate(-50%,-50%); opacity:.05; color:var(--bs-primary);
+}
+.testimonial-carousel .owl-item img { position:relative; width:100px; height:100px; z-index:1; border-radius:50%; }
+.testimonial-carousel .owl-item.center .bg-light {
+  background: var(--bs-primary) !important;
+  color: var(--bs-white) !important;
+}
+.testimonial-carousel .owl-nav { margin-top: 25px; display:flex; justify-content:center; gap:.5rem; }
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+  width:45px; height:45px; display:flex; align-items:center; justify-content:center; font-size:22px; color:var(--bs-white); background:var(--bs-primary);
+}
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover { background:var(--bs-secondary); }
+
+/* -------------------------
+   Footer
+   ------------------------- */
+.footer { position:relative; padding:3rem 1rem; background: #121212; color: rgba(255,255,255,.85); }
+@media (min-width:992px) {
+  .footer::after { position:absolute; content:""; width:1px; height:100%; top:0; left:50%; background: rgba(var(--bs-white-rgb), .06); }
+}
+.footer .btn.btn-link { display:block; margin-bottom:5px; padding:0; text-align:left; color: rgba(var(--bs-white-rgb), .6); font-weight:normal; text-transform:capitalize; transition: .3s; }
+.footer .btn.btn-link:hover { color: var(--bs-primary); letter-spacing:1px; box-shadow:none; }
+.footer .btn.btn-link::before { position:relative; content:"\f105"; font-family:"Font Awesome 5 Free"; font-weight:900; color: rgba(var(--bs-white-rgb), .5); margin-right:10px; }
+
+/* -------------------------
+   Misc overrides that often were hardcoded beige
+   ------------------------- */
+/* Replace hardcoded light borders/greys with subtle neutral that fits pink theme */
+.border-light-custom { border-color: rgba(var(--bs-dark-rgb), .06) !important; }
+
+/* Some templates used rgba(255,255,255,.05) to add subtle card backgrounds — leave them but ensure text contrasts */
+.bg-card-subtle { background: rgba(var(--bs-white-rgb), .02); }
+
+/* Replace specific hardcoded values used earlier */
+.service .service-item.border-lg-end { border-right: 1px solid rgba(var(--bs-dark-rgb), .06) !important; }
+
+/* Team overlay and other semi-transparent white sections */
+.team-overlay, .team-overlay p { color: var(--bs-dark); }
+
+/* Make sure any element that explicitly used the original beige hex is overwritten */
+[style*="#fde2e6"], [style*="#FDE2E6"], .beige-replace {
+  background: var(--bs-light) !important;
+}
+
+/* -------------------------
+   Responsive tweaks (keeps navbar compact)
+   ------------------------- */
+@media (max-width: 991.98px) {
+  .navbar .navbar-nav .nav-link { margin-left:0; padding:10px 0; }
+  .navbar-brand .brand-img { width: 110px; }
+  .collapse.navbar-collapse.p-3 { padding: .5rem !important; }
+}
+
+/* -------------------------
+   Small polish
+   ------------------------- */
+a.btn, button.btn { outline: none; }
+img { max-width:100%; height:auto; display:block; }
+
+/* If you still see beige anywhere:
+   - Run a global search for hex codes like #f1e7df, #f0e6dd, #dee2e6, #f8f0e0 and replace them with var(--bs-light) or rgba(var(--bs-white-rgb), .03)
+   - Make sure no other CSS file defines :root after this file (the last :root wins)
+*/
