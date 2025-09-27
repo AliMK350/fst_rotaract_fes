@@ -34,7 +34,7 @@ const Navbar = () => {
                     <div className="navbar-nav mx-auto">
                         <a href="/accueil" className="nav-item nav-link active">Home</a>
                         <a href="/membres" className="nav-item nav-link">Nos membres</a>
-                        <a href="/Blog" className="nav-item nav-link">Blog</a>
+                        <a href="/blog" className="nav-item nav-link">Blog</a>
                         {/* Dropdown */}
                         {/* <div className="nav-item dropdown">
                             <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
