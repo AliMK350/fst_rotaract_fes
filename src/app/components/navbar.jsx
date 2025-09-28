@@ -4,64 +4,56 @@ import Image from "next/image";
 
 const Navbar = () => {
   useEffect(() => {
-    // Dynamically import Bootstrap JS so collapse works
     import("bootstrap/dist/js/bootstrap.bundle.min.js");
   }, []);
 
   return (
-    <div className="container-fluid bg-white sticky-top p-0">
-      <nav className="navbar navbar-expand-lg navbar-light p-0">
-        {/* Brand Logo/Link */}
-        <a
-          href="/"
-          className="navbar-brand d-flex align-items-center px-3 py-0 me-0"
-          style={{ height: "60px" }}
-        >
+    <div className="container-fluid bg-white sticky-top p-0 shadow-sm">
+      <nav className="navbar navbar-expand-lg navbar-light px-4 py-2">
+
+        {/* Brand Logo */}
+        <a href="/" className="navbar-brand d-flex align-items-center">
           <Image
             src="/img/logo-rotaract.png"
             alt="Rotaract Logo"
-            width={400}
-            height={200}
+            width={250}  // Bigger logo width
+            height={80}  // Fixed height
             style={{ objectFit: "contain" }}
           />
         </a>
 
-        {/* Toggler Button */}
+        {/* Hamburger / Toggler */}
         <button
+          className="navbar-toggler ms-auto"
           type="button"
-          className="navbar-toggler me-4"
           data-bs-toggle="collapse"
           data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span
+            className="navbar-toggler-icon"
+            style={{
+              backgroundImage:
+                "url('data:image/svg+xml;charset=utf8,%3Csvg viewBox=\"0 0 30 30\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath stroke=\"pink\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-miterlimit=\"10\" d=\"M4 7h22M4 15h22M4 23h22\"/%3E%3C/svg%3E')",
+            }}
+          ></span>
         </button>
 
-        {/* Navigation Links */}
-        <div className="collapse navbar-collapse p-3" id="navbarCollapse">
+        {/* Links + Social Icons */}
+        <div className="collapse navbar-collapse" id="navbarCollapse">
           <div className="navbar-nav mx-auto">
-            <a href="/accueil" className="nav-item nav-link active">
-              Home
-            </a>
-            <a href="/membres" className="nav-item nav-link">
-              Nos membres
-            </a>
-            <a href="/blog" className="nav-item nav-link">
-              Blog
-            </a>
+            <a href="/accueil" className="nav-item nav-link active">Home</a>
+            <a href="/membres" className="nav-item nav-link">Nos membres</a>
+            <a href="/blog" className="nav-item nav-link">Blog</a>
           </div>
 
-          {/* Social Media Icons */}
-          <div className="d-flex">
-            <a
-              className="btn btn-primary btn-sm-square me-3"
-              href="https://www.facebook.com/share/1BaSkjBnSJ/?mibextid=wwXIfr"
-            >
+          <div className="d-flex ms-lg-3">
+            <a className="btn btn-primary btn-sm-square me-2" href="https://www.facebook.com/share/1BaSkjBnSJ/?mibextid=wwXIfr">
               <i className="fab fa-facebook-f"></i>
             </a>
-            <a
-              className="btn btn-primary btn-sm-square me-3"
-              href="https://www.instagram.com/rotaractfstfes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-            >
+            <a className="btn btn-primary btn-sm-square" href="https://www.instagram.com/rotaractfstfes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
               <i className="fab fa-instagram"></i>
             </a>
           </div>

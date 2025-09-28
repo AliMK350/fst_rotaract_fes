@@ -26,6 +26,19 @@
   --transition-fast: .35s;
 }
 
+/* Circle */
+.circle {
+  width: 100px; /* Or any desired width */
+  height: 100px; /* Must be equal to width for a perfect circle */
+  background-color: blue; /* Or any desired background color */
+  border-radius: 50%; /* This is the key to making it a circle */
+}
+
+/* sandwich */
+
+
+
+
 /* -------------------------
    Global resets & helpers
    ------------------------- */

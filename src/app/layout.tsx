@@ -31,6 +31,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
       <body>
         {children}
+      <div className="container-fluid bg-dark text-light footer pt-3 pb-3"/>
 
         {/* Scripts */}
         <Script

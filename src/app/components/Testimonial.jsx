@@ -18,7 +18,7 @@ const Testimonial = () => {
               alt="Lina Zerouali"
               width={60}
               height={60}
-              className="rounded-circle"
+              className="circle"
             />
             <div className="ps-3">
               <h5 className="mb-0 text-secondary">Lina Zerouali</h5>
