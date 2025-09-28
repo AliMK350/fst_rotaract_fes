@@ -26,8 +26,7 @@ const Testimonial = () => {
             </div>
           </div>
           <p className="mb-0">
-            Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. 
-            At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+            It is with great pride that I take on the presidency of Rotaract FST for this new year. Our club will continue to uphold the values of solidarity, service, and friendship, while strengthening the impact of our actions within the community. Together, with energy and commitment, we will build a year full of projects and achievements.
           </p>
         </div>
       </div>

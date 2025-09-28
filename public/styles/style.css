@@ -191,7 +191,7 @@ a { text-decoration: none; color: inherit; }
 .header-carousel .owl-nav .owl-next:hover { background:var(--bs-secondary); }
 
 /* Page header placeholder */
-.page-header { background: url(../img/page-header.jpg) center center no-repeat; background-size: contain; }
+/* .page-header { background: url(../img/page-header.jpg) center center no-repeat; background-size: contain; } */
 
 /* -------------------------
    Service section
