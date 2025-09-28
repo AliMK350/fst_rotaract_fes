@@ -12,12 +12,14 @@ export default function Membres() {
     { src: "/img/douaeghoulaichi.jpg", name: "Ghoulaichi Douae", role: "Vice Présidente", email: "ghoulaichidouae@gmail.com" },
     { src: "/img/sahar.jpg", name: "El Yaacoubi Sahar", role: "Secrétaire", email: "saharelyaacoubi@gmail.com" },
     { src: "/img/hiba.jpg", name: "Ismaili Hiba", role: "Chargée de Médias", email: "ismaili.hiba.07@gmail.com" },
+    { src: "/img/basma.jpg", name: "Maarouf Basma", role: "Adjointe secrétaire", email: "basmamaarouf041@gmail.com" },
     { src: "/img/aya.jpg", name: "Fakihi Aya", role: "Graphic Designer", email: "aya8fakihi@gmail.com" },
     { src: "/img/ahlam.jpg", name: "Elgareh Ahlam", role: "Trésorière", email: "ahlamelgareh0123@gmail.com" },
     { src: "/img/louaye.jpg", name: "Hayani Louaye", role: "Chef de Protocole", email: "hayaniajilouaye@gmail.com"},
     { src: "/img/ahmed.jpg", name: "Dalli Ahmed", role: "Chef de Sponsoring", email: " dalliahmed822@gmail.com"},
-    { src: "/img/ayoub.jpg", name: "Afoudi Ayoub", role: "Chef d’Organisation", email: "Ayoubafoudi99@gmail.com"},
+    { src: "/img/ayoub1.jpg", name: "Afoudi Ayoub", role: "Chef d’Organisation", email: "Ayoubafoudi99@gmail.com"},
     { src: "/img/ayah.jpg", name: "Hallioui Aya", role: "Conseillère ", email: "lvaliente633@gmail.com"},
+    { src: "/img/hamza.jpg", name: "El Ogri Hamza", role: "Adjoint Chef d’Organisation ", email: "hamza77721@gmail.com"},
   ];
 
   useEffect(() => {
