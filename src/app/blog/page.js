@@ -40,7 +40,9 @@ export default function Blog() {
           <nav aria-label="breadcrumb">
             <ol className="breadcrumb justify-content-center animated slideInLeft mb-0">
               <li className="breadcrumb-item"><a className="text-primary" href="/accueil">Home</a></li>
-              <li className="breadcrumb-item"><a className="text-primary" href="/equipe">Plus d'info</a></li>
+              <li className="breadcrumb-item">
+                  <a className="text-primary" href="/equipe">Plus d&apos;info</a>
+              </li>
               <li className="breadcrumb-item active" aria-current="page">Blog</li>
             </ol>
           </nav>
@@ -146,15 +148,18 @@ export default function Blog() {
             </div>
           </div> */}
           <div className="container py-5 d-flex justify-content-center">
+  <div className="container py-5 d-flex justify-content-center">
   <div className="card text-center shadow-sm" style={{ maxWidth: "500px", backgroundColor: "#fff0f6" }}>
     <div className="card-body py-4 px-3">
       <h5 className="card-title text-primary mb-2">Bienvenue sur notre Blog !</h5>
       <p className="card-text text-secondary mb-0">
-        Les dernières actualités et événements du club seront affichés ici dès qu'ils seront disponibles.
-        Restez connectés pour ne rien manquer !
+        Les derni&egrave;res actualit&eacute;s et &eacute;v&eacute;nements du club seront affich&eacute;s ici d&egrave;s qu&apos;ils seront disponibles.  
+        Restez connect&eacute;s pour ne rien manquer !
       </p>
     </div>
   </div>
+</div>
+
 </div>
 
         </div>
