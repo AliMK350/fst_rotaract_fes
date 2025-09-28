@@ -26,6 +26,64 @@
   --transition-fast: .35s;
 }
 
+/* Hamburger button */
+.navbar-toggler {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0.25rem 0.75rem;
+  position: relative;
+  width: 30px;
+  height: 22px;
+}
+
+/* Hamburger lines */
+.navbar-toggler .hamburger,
+.navbar-toggler .hamburger::before,
+.navbar-toggler .hamburger::after {
+  display: block;
+  background-color: pink;
+  height: 3px;
+  width: 100%;
+  border-radius: 3px;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler .hamburger {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navbar-toggler .hamburger::before {
+  content: '';
+  top: -8px;
+}
+
+.navbar-toggler .hamburger::after {
+  content: '';
+  bottom: -8px;
+}
+
+/* Animate hamburger to X on toggle */
+.navbar-toggler.collapsed .hamburger {
+  background-color: rgb(242, 5, 159);
+}
+
+.navbar-toggler:not(.collapsed) .hamburger {
+  background-color: transparent;
+}
+
+.navbar-toggler:not(.collapsed) .hamburger::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.navbar-toggler:not(.collapsed) .hamburger::after {
+  transform: rotate(-45deg);
+  bottom: 0;
+}
+
 /* -------------------------
    Global resets & helpers
    ------------------------- */

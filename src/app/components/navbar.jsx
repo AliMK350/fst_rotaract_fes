@@ -28,13 +28,16 @@ const Navbar = () => {
 
         {/* Toggler Button */}
         <button
-          type="button"
-          className="navbar-toggler me-4"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+  className="navbar-toggler me-4"
+  type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#navbarCollapse"
+  aria-controls="navbarCollapse"
+  aria-expanded="false"
+  aria-label="Toggle navigation"
+>
+  <span className="hamburger"></span>
+</button>
 
         {/* Navigation Links */}
         <div className="collapse navbar-collapse p-3" id="navbarCollapse">
