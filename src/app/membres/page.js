@@ -7,97 +7,193 @@ export default function Membres(){
             <Navbar></Navbar>
                 <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
             <div className="container py-5">
-                <div className="section-title text-center position-relative pb-3 mb-5 mx-auto" style={{ maxWidth: '600px' }}>
-                    <h5 className="fw-bold text-primary text-uppercase">Testimonial</h5>
-                    <h1 className="mb-0">What Our members Say About Rotaract</h1>
-                </div>
-                {/* The main carousel structure. main.js handles the carousel initialization. */}
-                <div className="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
-                    
-                    {/* Testimonial Item 1 */}
-                    <div className="testimonial-item bg-light my-4">
-                        <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                            <img className="img-fluid rounded-circle" src="/img/testimonial-1.jpg" style={{ width: '60px', height: '60px' }} alt="Client 1" />
-                            <div className="ps-4">
-                                <h4 className="text-primary mb-1">Member Name 1</h4>
-                                <small className="text-uppercase">Occupation 1</small>
+                <div className="row g-5">
+                    <div className="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                        <div className="team-item bg-light rounded overflow-hidden">
+                            <div className="team-img position-relative overflow-hidden">
+                                {/* Ensure /img/team-1.jpg exists in your public folder */}
+                                <img className="img-fluid" src="/img/membres/lina.jpg" alt="Team Member 1" />
+                                <div className="team-social">
+                                    <a className="btn btn-square" href="mailto:linazerouali07@gmail.com"><i className="fa fa-envelope"></i></a>
+                                </div>
+                            </div>
+                            <div className="text-center py-4">
+                                <h5 className="text-primary">Zerouali Lina</h5>
+                                <p className="m-0">Présidente</p>
                             </div>
                         </div>
-                        <div className="pt-4 px-5">
-                            Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. 
-                            At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                    </div>
+                    <div className="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                        <div className="team-item bg-light rounded overflow-hidden">
+                            <div className="team-img position-relative overflow-hidden">
+                                {/* Ensure /img/team-2.jpg exists in your public folder */}
+                                <img className="img-fluid" src="/img/douaeghoulaichi.jpg" alt="Team Member 2" />
+                                <div className="team-social">
+                                    <a className="btn btn-square" href="mailto:ghoulaichidouae@gmail.com"><i className="fa fa-envelope"></i></a>
+                                </div>
+                            </div>
+                            <div className="text-center py-4">
+                                <h5 className="text-primary">Ghoulaichi Douae</h5>
+                                <p className="m-0">Vice Présidente</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                        <div className="team-item bg-light rounded overflow-hidden">
+                            <div className="team-img position-relative overflow-hidden">
+                                {/* Ensure /img/team-3.jpg exists in your public folder */}
+                                <img className="img-fluid" src="/img/sahar.jpg" alt="Team Member 3" />
+                                <div className="team-social">
+                                    <a className="btn btn-square" href="mailto:Saharelyaacoubi@gmail.com"><i className="fa fa-envelope"></i></a>
+                                </div>
+                            </div>
+                            <div className="text-center py-4">
+                                <h5 className="text-primary"> El Yaacoubi Sahar</h5>
+                                <p className="m-0">Secrétaire</p>
+                            </div>
                         </div>
                     </div>
 
-                    {/* Testimonial Item 2 */}
-                    <div className="testimonial-item bg-light my-4">
-                        <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                            <img className="img-fluid rounded-circle" src="/img/testimonial-2.jpg" style={{ width: '60px', height: '60px' }} alt="Client 2" />
-                            <div className="ps-4">
-                                <h4 className="text-primary mb-1">Member Name 2</h4>
-                                <small className="text-uppercase">Occupation 2</small>
+                    <div className="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                        <div className="team-item bg-light rounded overflow-hidden">
+                            <div className="team-img position-relative overflow-hidden">
+                                {/* Ensure /img/team-3.jpg exists in your public folder */}
+                                <img className="img-fluid" src="/img/sahar.jpg" alt="Team Member 3" />
+                                <div className="team-social">
+                                    <a className="btn btn-square" href="mailto:basmamaarouf041@gmail.com"><i className="fa fa-envelope"></i></a>
+                                </div>
+                            </div>
+                            <div className="text-center py-4">
+                                <h5 className="text-primary">Maarouf Basma</h5>
+                                <p className="m-0">Adjointe secrétaire</p>
                             </div>
                         </div>
-                        <div className="pt-4 px-5">
-                            Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. 
-                            At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                    </div>
+                    <div className="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                        <div className="team-item bg-light rounded overflow-hidden">
+                            <div className="team-img position-relative overflow-hidden">
+                                {/* Ensure /img/team-3.jpg exists in your public folder */}
+                                <img className="img-fluid" src="/img/hiba.jpg" alt="Team Member 3" />
+                                <div className="team-social">
+                                    <a className="btn btn-square" href="mailto:ismaili.hiba.07@gmail.com"><i className="fa fa-envelope"></i></a>
+                                </div>
+                            </div>
+                            <div className="text-center py-4">
+                                <h5 className="text-primary">Ismaili Hiba</h5>
+                                <p className="m-0">Chargée de Médias</p>
+                            </div>
                         </div>
                     </div>
 
-                    {/* Testimonial Item 3 */}
-                    <div className="testimonial-item bg-light my-4">
-                        <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                            <img className="img-fluid rounded-circle" src="/img/testimonial-3.jpg" style={{ width: '60px', height: '60px' }} alt="Client 3" />
-                            <div className="ps-4">
-                                <h4 className="text-primary mb-1">Member Name 3</h4>
-                                <small className="text-uppercase">Occupation 3</small>
+                    <div className="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                        <div className="team-item bg-light rounded overflow-hidden">
+                            <div className="team-img position-relative overflow-hidden">
+                                {/* Ensure /img/team-3.jpg exists in your public folder */}
+                                <img className="img-fluid" src="/img/aya.jpg" alt="Team Member 3" />
+                                <div className="team-social">
+                                    <a className="btn btn-square" href="mailto:Aya8fakihi@gmail.com"><i className="fa fa-envelope"></i></a>
+                                </div>
                             </div>
-                        </div>
-                        <div className="pt-4 px-5">
-                            Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. 
-                            At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                            <div className="text-center py-4">
+                                <h5 className="text-primary">Fakihi Aya</h5>
+                                <p className="m-0">Graphic Designer</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div className="testimonial-item bg-light my-4">
-                        <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                            <img className="img-fluid rounded-circle" src="/img/testimonial-1.jpg" style={{ width: '60px', height: '60px' }} alt="Client 1" />
-                            <div className="ps-4">
-                                <h4 className="text-primary mb-1">Member Name 1</h4>
-                                <small className="text-uppercase">Occupation 1</small>
+                    <div className="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                        <div className="team-item bg-light rounded overflow-hidden">
+                            <div className="team-img position-relative overflow-hidden">
+                                {/* Ensure /img/team-3.jpg exists in your public folder */}
+                                <img className="img-fluid" src="/img/ahlam.jpg" alt="Team Member 3" />
+                                <div className="team-social">
+                                    <a className="btn btn-square" href="mailto:ahlamelgareh0123@gmail.com"><i className="fa fa-envelope"></i></a>
+                                </div>
                             </div>
-                        </div>
-                        <div className="pt-4 px-5">
-                            Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. 
-                            At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                            <div className="text-center py-4">
+                                <h5 className="text-primary">Elgareh Ahlam</h5>
+                                <p className="m-0">Trésorière</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div className="testimonial-item bg-light my-4">
-                        <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                            <img className="img-fluid rounded-circle" src="/img/testimonial-1.jpg" style={{ width: '60px', height: '60px' }} alt="Client 1" />
-                            <div className="ps-4">
-                                <h4 className="text-primary mb-1">Member Name 1</h4>
-                                <small className="text-uppercase">Occupation 1</small>
+                    <div className="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                        <div className="team-item bg-light rounded overflow-hidden">
+                            <div className="team-img position-relative overflow-hidden">
+                                {/* Ensure /img/team-3.jpg exists in your public folder */}
+                                <img className="img-fluid" src="/img/louaye.jpg" alt="Team Member 3" />
+                                <div className="team-social">
+                                    <a className="btn btn-square" href="mailto:Hayaniajilouaye@gmail.com"><i className="fa fa-envelope"></i></a>
+                                </div>
                             </div>
-                        </div>
-                        <div className="pt-4 px-5">
-                            Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. 
-                            At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                            <div className="text-center py-4">
+                                <h5 className="text-primary">Hayani Louaye</h5>
+                                <p className="m-0">Chef de Protocole</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div className="testimonial-item bg-light my-4">
-                        <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                            <img className="img-fluid rounded-circle" src="/img/testimonial-1.jpg" style={{ width: '60px', height: '60px' }} alt="Client 1" />
-                            <div className="ps-4">
-                                <h4 className="text-primary mb-1">Member Name 1</h4>
-                                <small className="text-uppercase">Occupation 1</small>
+                    <div className="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                        <div className="team-item bg-light rounded overflow-hidden">
+                            <div className="team-img position-relative overflow-hidden">
+                                {/* Ensure /img/team-3.jpg exists in your public folder */}
+                                <img className="img-fluid" src="/img/ahmed.jpg" alt="Team Member 3" />
+                                <div className="team-social">
+                                    <a className="btn btn-square" href="mailto:Dalliahmed822@gmail.com"><i className="fa fa-envelope"></i></a>
+                                </div>
+                            </div>
+                            <div className="text-center py-4">
+                                <h5 className="text-primary">Dalli Ahmed</h5>
+                                <p className="m-0">Chef de sponsoring</p>
                             </div>
                         </div>
-                        <div className="pt-4 px-5">
-                            Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. 
-                            At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                    </div>
+
+                    <div className="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                        <div className="team-item bg-light rounded overflow-hidden">
+                            <div className="team-img position-relative overflow-hidden">
+                                {/* Ensure /img/team-3.jpg exists in your public folder */}
+                                <img className="img-fluid" src="/img/ayoub.jpg" alt="Team Member 3" />
+                                <div className="team-social">
+                                    <a className="btn btn-square" href="mailto:Ayoubafoudi99@gmail.com"><i className="fa fa-envelope"></i></a>
+                                </div>
+                            </div>
+                            <div className="text-center py-4">
+                                <h5 className="text-primary">Afoudi Ayoub</h5>
+                                <p className="m-0">Chef d’Organisation</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                        <div className="team-item bg-light rounded overflow-hidden">
+                            <div className="team-img position-relative overflow-hidden">
+                                {/* Ensure /img/team-3.jpg exists in your public folder */}
+                                <img className="img-fluid" src="/img/hamza.jpg" alt="Team Member 3" />
+                                <div className="team-social">
+                                    <a className="btn btn-square" href="mailto:hamza77721@gmail.com"><i className="fa fa-envelope"></i></a>
+                                </div>
+                            </div>
+                            <div className="text-center py-4">
+                                <h5 className="text-primary">El Ogri Hmaza</h5>
+                                <p className="m-0">Adjoint Chef d’Organisation</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                        <div className="team-item bg-light rounded overflow-hidden">
+                            <div className="team-img position-relative overflow-hidden">
+                                {/* Ensure /img/team-3.jpg exists in your public folder */}
+                                <img className="img-fluid" src="/img/ayah.jpg" alt="Team Member 3" />
+                                <div className="team-social">
+                                    <a className="btn btn-square" href="mailto:Ivaliente633@gmail.com"><i className="fa fa-envelope"></i></a>
+                                </div>
+                            </div>
+                            <div className="text-center py-4">
+                                <h5 className="text-primary">Hallioui Aya</h5>
+                                <p className="m-0">Conseillère </p>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -52,9 +52,8 @@ const Navbar = () => {
                     
                     {/* Social Media Icons */}
                     <div className="d-flex">
-                        <a className="btn btn-primary btn-sm-square me-3" href=""><i className="fab fa-facebook-f"></i></a>
-                        <a className="btn btn-primary btn-sm-square me-3" href=""><i className="fab fa-instagram"></i></a>
-                        <a className="btn btn-primary btn-sm-square" href=""><i className="fab fa-linkedin-in"></i></a>
+                        <a className="btn btn-primary btn-sm-square me-3" href="https://www.facebook.com/share/1BaSkjBnSJ/?mibextid=wwXIfr"><i className="fab fa-facebook-f"></i></a>
+                        <a className="btn btn-primary btn-sm-square me-3" href="https://www.instagram.com/rotaractfstfes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i className="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </nav>

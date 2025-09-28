@@ -15,17 +15,17 @@ const Blog = () => {
                     <div className="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
                         <div className="blog-item bg-light rounded overflow-hidden">
                             <div className="blog-img position-relative overflow-hidden">
-                                <img className="img-fluid" src="/img/hero-slider-4.jpg" alt="Blog Image 1" />
-                                <a className="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-3" href="">Friendships</a>
+                                <img className="img-fluid" src="/img/fst.png" alt="Blog Image 1" />
+                                {/* <a className="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-3" href="">Friendships</a> */}
                             </div>
                             <div className="p-4">
                                 <div className="d-flex mb-3">
-                                    <small className="me-3"><i className="far fa-user text-primary me-2"></i>Admin</small>
-                                    <small><i className="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
+                                    <small className="me-3"><i className="far fa-user text-primary me-2"></i>FST Fès</small>
+                                    <small><i className="far fa-calendar-alt text-primary me-2"></i>1995</small>
                                 </div>
-                                <h4 className="mb-3">Dolor et stet dolore ipsum et clita dolor</h4>
-                                <p>Dolor et stet dolore ipsum et clita dolor ipsum et clita dolor et stet...</p>
-                                <a className="text-uppercase" href="">Read More <i className="bi bi-arrow-right"></i></a>
+                                <h4 className="mb-3">FST Fès</h4>
+                                <p>La Faculté des Sciences et Techniques (FST) de Fès a été fondée en 1995. Elle fait partie d'un réseau national d'établissements universitaires à caractère scientifique et technique, créé pour diversifier les formations offertes aux bacheliers scientifiques et améliorer l'intégration de l'université dans son environnement socio-économique</p>
+                                <a className="text-uppercase" href="/fst">En savoir plus <i className="bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -34,17 +34,17 @@ const Blog = () => {
                     <div className="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
                         <div className="blog-item bg-light rounded overflow-hidden">
                             <div className="blog-img position-relative overflow-hidden">
-                                <img className="img-fluid" src="/img/hero-slider-4.jpg" alt="Blog Image 2" />
-                                <a className="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-3" href="">Humanity</a>
+                                <img className="img-fluid" src="/img/new-logo.png" alt="Blog Image 2" />
+                                {/* <a className="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-3" href="">Humanity</a> */}
                             </div>
                             <div className="p-4">
                                 <div className="d-flex mb-3">
-                                    <small className="me-3"><i className="far fa-user text-primary me-2"></i>Admin</small>
-                                    <small><i className="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
+                                    <small className="me-3"><i className="far fa-user text-primary me-2"></i>Rotaract</small>
+                                    <small><i className="far fa-calendar-alt text-primary me-2"></i>2014</small>
                                 </div>
-                                <h4 className="mb-3">Dolor et stet dolore ipsum et clita dolor</h4>
-                                <p>Dolor et stet dolore ipsum et clita dolor ipsum et clita dolor et stet...</p>
-                                <a className="text-uppercase" href="">Read More <i className="bi bi-arrow-right"></i></a>
+                                <h4 className="mb-3">Rotaract et FST Fès</h4>
+                                <p>Le Rotaract FST Fès, fondé en 2014, s’inscrit dans cette dynamique en rassemblant des étudiants engagés de la Faculté des Sciences et Techniques de Fès autour de projets humanitaires, sociaux et culturels, portés par l’esprit de solidarité et de leadership.</p>
+                                <a className="text-uppercase" href="/equipe">En savoir plus <i className="bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -53,17 +53,17 @@ const Blog = () => {
                     <div className="col-lg-4 wow zoomIn" data-wow-delay="0.9s">
                         <div className="blog-item bg-light rounded overflow-hidden">
                             <div className="blog-img position-relative overflow-hidden">
-                                <img className="img-fluid" src="/img/hero-slider-4.jpg" alt="Blog Image 3" />
-                                <a className="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-3" href="">Aventures</a>
+                                <img className="img-fluid" src="/img/img8.jpg" alt="Blog Image 3" />
+                                {/* <a className="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-3" href="">Aventures</a> */}
                             </div>
                             <div className="p-4">
                                 <div className="d-flex mb-3">
-                                    <small className="me-3"><i className="far fa-user text-primary me-2"></i>Admin</small>
-                                    <small><i className="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
+                                    <small className="me-3"><i className="far fa-user text-primary me-2"></i>Our team</small>
+                                    <small><i className="far fa-calendar-alt text-primary me-2"></i>2025</small>
                                 </div>
-                                <h4 className="mb-3">Dolor et stet dolore ipsum et clita dolor</h4>
-                                <p>Dolor et stet dolore ipsum et clita dolor ipsum et clita dolor et stet...</p>
-                                <a className="text-uppercase" href="">Read More <i className="bi bi-arrow-right"></i></a>
+                                <h4 className="mb-3">Notre chere équipe</h4>
+                                <p>Depuis ses débuts, le club a su préserver une double identité : celle d’un lieu de service à la communauté et celle d’une véritable école de vie où chaque membre apprend à travailler en équipe, à développer son sens du leadership et à cultiver des liens d’amitié forts.</p>
+                                <a className="text-uppercase" href="/equipe">En savoir plus <i className="bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>

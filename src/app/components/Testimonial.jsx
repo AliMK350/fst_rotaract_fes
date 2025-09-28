@@ -7,7 +7,7 @@ const Testimonial = () => {
             <div className="container py-5">
                 <div className="section-title text-center position-relative pb-3 mb-5 mx-auto" style={{ maxWidth: '600px' }}>
                     <h5 className="fw-bold text-primary text-uppercase">Testimonial</h5>
-                    <h1 className="mb-0">What Our members Say About Rotaract</h1>
+                    <h1 className="mb-0">Ce que nos membres disent sur Rotaract FST Fès</h1>
                 </div>
                 {/* The main carousel structure. main.js handles the carousel initialization. */}
                 <div className="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
@@ -15,10 +15,10 @@ const Testimonial = () => {
                     {/* Testimonial Item 1 */}
                     <div className="testimonial-item bg-light my-4">
                         <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                            <img className="img-fluid rounded-circle" src="/img/testimonial-1.jpg" style={{ width: '60px', height: '60px' }} alt="Client 1" />
+                            <img className="img-fluid rounded-circle" src="/img/membres/lina.jpg" style={{ width: '60px', height: '60px' }} alt="Client 1" />
                             <div className="ps-4">
-                                <h4 className="text-primary mb-1">Member Name 1</h4>
-                                <small className="text-uppercase">Occupation 1</small>
+                                <h4 className="text-secondary mb-1">Lina Zerouali</h4>
+                                <small className="text-uppercase">Presidente</small>
                             </div>
                         </div>
                         <div className="pt-4 px-5">
@@ -30,10 +30,10 @@ const Testimonial = () => {
                     {/* Testimonial Item 2 */}
                     <div className="testimonial-item bg-light my-4">
                         <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                            <img className="img-fluid rounded-circle" src="/img/testimonial-2.jpg" style={{ width: '60px', height: '60px' }} alt="Client 2" />
+                            <img className="img-fluid rounded-circle" src="/img/douaeghoulaichi.jpg" style={{ width: '60px', height: '60px' }} alt="Client 2" />
                             <div className="ps-4">
-                                <h4 className="text-primary mb-1">Member Name 2</h4>
-                                <small className="text-uppercase">Occupation 2</small>
+                                <h4 className="text-secondary mb-1">Douae Ghoulaichi</h4>
+                                <small className="text-uppercase">Vice Presidente</small>
                             </div>
                         </div>
                         <div className="pt-4 px-5">
