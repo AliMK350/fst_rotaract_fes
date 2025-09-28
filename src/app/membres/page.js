@@ -39,8 +39,27 @@ export default function Membres() {
 
   return (
     <>
-      <Navbar />
+      <Navbar/>
       <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div
+        className="container-fluid bg-light py-5 mb-5"
+        style={{
+          backgroundImage: "url('/img/uni1.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="container text-center py-5">
+          <h1 style={{ color: "pink" }} className="display-1 animated slideInLeft">Nos chers membres</h1>
+          <nav aria-label="breadcrumb">
+            <ol className="breadcrumb justify-content-center animated slideInLeft mb-0">
+              <li className="breadcrumb-item"><a className="text-primary" href="/accueil">Home</a></li>
+              <li className="breadcrumb-item"><a className="text-primary" href="/blog">Blog</a></li>
+              <li className="breadcrumb-item active" aria-current="page">Membres</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
         <div className="container py-5">
           <div className="row g-5">
             {members.map((member, idx) => (
