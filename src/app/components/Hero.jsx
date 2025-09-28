@@ -1,6 +1,7 @@
 // ./components/Hero.jsx
 
 import React from 'react';
+import Image from 'next/image';
 
 const Hero = () => {
     return (
@@ -37,9 +38,27 @@ const Hero = () => {
                         {/* NOTE: The 'owl-carousel' class relies on 'main.js' to initialize the slider
                              because we correctly loaded the JS in layout.tsx. */}
                         <div className="owl-carousel header-carousel animated fadeIn">
-                            <img className="img-fluid" src="/img/img5.jpg" alt="" />
-                            <img className="img-fluid" src="/img/img3.jpg" alt="" />
-                            <img className="img-fluid relative" src="/img/logo-rotaract.png" alt=""/>
+<Image
+  src="/img/img5.jpg"
+  alt="carousel image 1"
+  fill
+  className="img-fluid position-relative"
+/>
+
+<Image
+  src="/img/img3.jpg"
+  alt="carousel image 2"
+  fill
+  className="img-fluid position-relative"
+/>
+
+<Image
+  src="/img/logo-rotaract.png"
+  alt="Rotaract Logo"
+  fill
+  className="img-fluid position-relative"
+/>
+
                         </div>
                     </div>
                 </div>

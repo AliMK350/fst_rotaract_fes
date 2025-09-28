@@ -1,5 +1,5 @@
 // ./components/Footer.jsx
-
+import Image from "next/image";
 const Footer = () => {
     return (
         // Footer Start
@@ -29,7 +29,13 @@ const Footer = () => {
                     
                     {/* Column 3: Newsletter */}
                     <div className="col-lg-4 col-md-6">
-                        <img className="img relative" width={8000} height={1000} src="/img/logo-rotaract.png" alt=""/>
+                        <Image
+  src="/img/logo-rotaract.png"
+  alt="Rotaract Logo"
+  width={200}   // set a reasonable width
+  height={50}   // set a reasonable height
+/>
+
                     </div>
                 </div>
             </div>

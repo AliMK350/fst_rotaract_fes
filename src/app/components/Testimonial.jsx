@@ -1,4 +1,4 @@
-// ./components/Testimonial.jsx
+import Image from "next/image";
 
 const Testimonial = () => {
     return (
@@ -15,7 +15,13 @@ const Testimonial = () => {
                     {/* Testimonial Item 1 */}
                     <div className="testimonial-item bg-light my-4">
                         <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                            <img className="img-fluid rounded-circle" src="/img/membres/lina.jpg" style={{ width: '60px', height: '60px' }} alt="Client 1" />
+                            <Image 
+                                src="/img/membres/lina.jpg" 
+                                alt="Client 1" 
+                                width={60} 
+                                height={60} 
+                                className="img-fluid rounded-circle"
+                            />
                             <div className="ps-4">
                                 <h4 className="text-secondary mb-1">Lina Zerouali</h4>
                                 <small className="text-uppercase">Presidente</small>
@@ -30,7 +36,13 @@ const Testimonial = () => {
                     {/* Testimonial Item 2 */}
                     <div className="testimonial-item bg-light my-4">
                         <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                            <img className="img-fluid rounded-circle" src="/img/douaeghoulaichi.jpg" style={{ width: '60px', height: '60px' }} alt="Client 2" />
+                            <Image 
+                                src="/img/douaeghoulaichi.jpg" 
+                                alt="Client 2" 
+                                width={60} 
+                                height={60} 
+                                className="img-fluid rounded-circle"
+                            />
                             <div className="ps-4">
                                 <h4 className="text-secondary mb-1">Douae Ghoulaichi</h4>
                                 <small className="text-uppercase">Vice Presidente</small>
@@ -45,7 +57,13 @@ const Testimonial = () => {
                     {/* Testimonial Item 3 */}
                     <div className="testimonial-item bg-light my-4">
                         <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                            <img className="img-fluid rounded-circle" src="/img/testimonial-3.jpg" style={{ width: '60px', height: '60px' }} alt="Client 3" />
+                            <Image 
+                                src="/img/testimonial-3.jpg" 
+                                alt="Client 3" 
+                                width={60} 
+                                height={60} 
+                                className="img-fluid rounded-circle"
+                            />
                             <div className="ps-4">
                                 <h4 className="text-primary mb-1">Member Name 3</h4>
                                 <small className="text-uppercase">Occupation 3</small>

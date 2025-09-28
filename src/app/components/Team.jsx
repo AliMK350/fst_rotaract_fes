@@ -1,4 +1,4 @@
-// ./components/Team.jsx
+import Image from "next/image";
 
 const Team = () => {
     return (
@@ -13,10 +13,17 @@ const Team = () => {
                     <div className="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
                         <div className="team-item bg-light rounded overflow-hidden">
                             <div className="team-img position-relative overflow-hidden">
-                                {/* Ensure /img/team-1.jpg exists in your public folder */}
-                                <img className="img-fluid" src="/img/membres/lina.jpg" alt="Team Member 1" />
+                                <Image 
+                                    src="/img/membres/lina.jpg" 
+                                    alt="Team Member 1" 
+                                    width={400} 
+                                    height={400} 
+                                    className="img-fluid" 
+                                />
                                 <div className="team-social">
-                                    <a className="btn btn-square" href="mailto:linazerouali07@gmail.com"><i className="fa fa-envelope"></i></a>
+                                    <a className="btn btn-square" href="mailto:linazerouali07@gmail.com">
+                                        <i className="fa fa-envelope"></i>
+                                    </a>
                                 </div>
                             </div>
                             <div className="text-center py-4">
@@ -25,13 +32,21 @@ const Team = () => {
                             </div>
                         </div>
                     </div>
+
                     <div className="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
                         <div className="team-item bg-light rounded overflow-hidden">
                             <div className="team-img position-relative overflow-hidden">
-                                {/* Ensure /img/team-2.jpg exists in your public folder */}
-                                <img className="img-fluid" src="/img/douaeghoulaichi.jpg" alt="Team Member 2" />
+                                <Image 
+                                    src="/img/douaeghoulaichi.jpg" 
+                                    alt="Team Member 2" 
+                                    width={400} 
+                                    height={400} 
+                                    className="img-fluid" 
+                                />
                                 <div className="team-social">
-                                    <a className="btn btn-square" href="mailto:ghoulaichidouae@gmail.com"><i className="fa fa-envelope"></i></a>
+                                    <a className="btn btn-square" href="mailto:ghoulaichidouae@gmail.com">
+                                        <i className="fa fa-envelope"></i>
+                                    </a>
                                 </div>
                             </div>
                             <div className="text-center py-4">
@@ -40,26 +55,35 @@ const Team = () => {
                             </div>
                         </div>
                     </div>
+
                     <div className="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
                         <div className="team-item bg-light rounded overflow-hidden">
                             <div className="team-img position-relative overflow-hidden">
-                                {/* Ensure /img/team-3.jpg exists in your public folder */}
-                                <img className="img-fluid" src="/img/sahar.jpg" alt="Team Member 3" />
+                                <Image 
+                                    src="/img/sahar.jpg" 
+                                    alt="Team Member 3" 
+                                    width={400} 
+                                    height={400} 
+                                    className="img-fluid" 
+                                />
                                 <div className="team-social">
-                                    <a className="btn btn-square" href="mailto:Saharelyaacoubi@gmail.com"><i className="fa fa-envelope"></i></a>
+                                    <a className="btn btn-square" href="mailto:Saharelyaacoubi@gmail.com">
+                                        <i className="fa fa-envelope"></i>
+                                    </a>
                                 </div>
                             </div>
                             <div className="text-center py-4">
-                                <h5 className="text-primary"> El Yaacoubi Sahar</h5>
+                                <h5 className="text-primary">El Yaacoubi Sahar</h5>
                                 <p className="m-0">Secrétaire</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <center><a href="/membres" className="btn btn-primary py-3 px-5">Voir tous nos membres</a></center>
+            <center>
+                <a href="/membres" className="btn btn-primary py-3 px-5">Voir tous nos membres</a>
+            </center>
         </div>
-        
         // Team End
     );
 }

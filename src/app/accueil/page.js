@@ -7,6 +7,7 @@ import About from '../components/About';
 import Team from '../components/Team';
 import Testimonial from '../components/Testimonial';
 import Blog from '../components/Blog';
+import Image from "next/image";
 
 export default function Accueil(){
     return(

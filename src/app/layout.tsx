@@ -2,8 +2,12 @@
 import Script from "next/script";
 import type { ReactNode } from "react";
 
+// Import local CSS directly (no <link> tags)
 import "../../public/styles/bootstrap.min.css";
 import "../../public/styles/style.css";
+import "../../public/lib/animate/animate.min.css";
+import "../../public/lib/lightbox/css/lightbox.min.css";
+import "../../public/lib/owlcarousel/assets/owl.carousel.min.css";
 
 export const metadata = {
   title: "Rotaract FST Fès",
@@ -14,7 +18,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
-        {/* External CSS */}
+        {/* External CSS OK as <link> */}
         <link
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
           rel="stylesheet"
@@ -23,11 +27,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
           rel="stylesheet"
         />
-
-        {/* Plugin CSS */}
-        <link href="/lib/animate/animate.min.css" rel="stylesheet" />
-        <link href="/lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-        <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
       </head>
 
       <body>
