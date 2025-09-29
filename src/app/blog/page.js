@@ -75,7 +75,9 @@ export default function Blog() {
               <p className="mb-2 text-muted">
                 <i className="fa fa-calendar-alt text-primary me-2"></i>
                 16 mars 2024 |
-                <i className="fa fa-map text-primary ms-2 me-2"></i>Aïn Bouali
+                <i className="fa fa-map text-primary ms-2 me-2"></i>
+                Aïn Bouali | 
+                <i className="fa fa-user-edit text-primary me-1"></i>Sahar El Yaagoubi
               </p>
               <h3 className="mb-3 text-primary">
                 • La rénovation de la mosquée : une initiative humanitaire et
@@ -152,6 +154,8 @@ export default function Blog() {
               <i className="fa fa-calendar-alt text-primary me-2"></i>18 mai 2025
               |
               <i className="fa fa-map text-primary ms-2 me-2"></i>Douar Bouarous
+              |
+              <i className="fa fa-user-edit text-primary me-1"></i>Douae Ghoulaichi
             </p>
             <h3 className="mb-3 text-primary">
               • Une caravane humanitaire primée pour son impact culturel et
