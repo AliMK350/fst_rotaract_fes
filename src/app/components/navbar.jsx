@@ -48,6 +48,7 @@ const Navbar = () => {
             <a href="/membres" className="nav-item nav-link">Nos membres</a>
             <a href="/blog" className="nav-item nav-link">Blog</a>
             <a href="/contact" className="nav-item nav-link">Contact</a>
+            <a href="/don" className="nav-item nav-link">Faire un don</a>
           </div>
 
           <div className="d-flex ms-lg-3">
