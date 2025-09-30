@@ -108,10 +108,7 @@ export default function FaireUnDon() {
           ))}
         </div>
 
-        <div className="text-center">
-          <h3 className="mb-3">RIB pour vos dons :</h3>
-          <p style={{ fontSize: "1.2rem", fontWeight: "bold" }}>{rib}</p>
-        </div>
+        
       </div>
 
       <Footer />

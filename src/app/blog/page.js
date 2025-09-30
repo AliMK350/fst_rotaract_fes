@@ -76,8 +76,9 @@ export default function Blog() {
                 <i className="fa fa-calendar-alt text-primary me-2"></i>
                 16 mars 2024 |
                 <i className="fa fa-map text-primary ms-2 me-2"></i>
-                Aïn Bouali | 
-                <i className="fa fa-user-edit text-primary me-1"></i>Sahar El Yaagoubi
+                Aïn Bouali |
+                <i className="fa fa-user-edit text-primary me-1"></i>Sahar El
+                Yaagoubi
               </p>
               <h3 className="mb-3 text-primary">
                 • La rénovation de la mosquée : une initiative humanitaire et
@@ -116,7 +117,7 @@ export default function Blog() {
 
           {/* Gallery */}
           <div className="col-lg-4">
-            <div className="row g-3">
+            <div className="row g-3 h-100">
               <div className="col-12">
                 <Image
                   src="/img/blog/article1.jpg"
@@ -143,94 +144,98 @@ export default function Blog() {
       </div>
 
       {/* Second Article */}
-      <div className="row g-4 mb-5 align-items-start">
-        {/* Main Card */}
-        <div className="col-lg-8">
-          <div
-            className="bg-light p-4 rounded shadow-sm h-100"
-            style={{ backgroundColor: "#fff0f6" }}
-          >
-            <p className="mb-2 text-muted">
-              <i className="fa fa-calendar-alt text-primary me-2"></i>18 mai 2025
-              |
-              <i className="fa fa-map text-primary ms-2 me-2"></i>Douar Bouarous
-              |
-              <i className="fa fa-user-edit text-primary me-1"></i>Douae Ghoulaichi
-            </p>
-            <h3 className="mb-3 text-primary">
-              • Une caravane humanitaire primée pour son impact culturel et
-              social
-            </h3>
-            <p>
-              Le 18 mai 2025 restera une date marquante pour le club Rotaract FST
-              Fès, qui a organisé une caravane humanitaire au Douar Bouarous.
-              Cette initiative, saluée pour son impact humain et culturel, a valu
-              au club la 3ème place du <strong>BEST CULTURE PROJECT</strong> au
-              niveau du district, consacrant ainsi l’engagement des jeunes
-              bénévoles en faveur des populations vulnérables.
-            </p>
-            <p>
-              Dès 10h du matin, la caravane a démarré par la distribution des
-              aides matérielles (vêtements, couvertures, etc…) soigneusement
-              préparés. Les habitants ont accueilli nos membres avec chaleur et
-              gratitude, créant une atmosphère de partage et de fraternité.
-            </p>
-            <p>
-              Nos membres du club ne se sont pas limités à la remise de dons : ils
-              ont pris le temps de discuter avec les familles et d’écouter leurs
-              récits. Une visite de <em>Dar Al Fatat</em> a aussi permis de
-              constater les difficultés auxquelles élèves et enseignants font face
-              au quotidien.
-            </p>
-            <p>
-              La journée a été marquée par des instants de partage authentiques :
-              discussions intergénérationnelles, sourires des enfants, et
-              gratitude exprimée par les plus âgés. <em>&quot;Al Qaïd&quot;</em>,
-              le chef de la commune rurale, a souligné dans son discours
-              l’importance d’un tel appui pour une communauté qui endure des
-              conditions de vie difficiles.
-            </p>
-            <p>
-              Loin de se limiter à son effet concret, cette action met en lumière
-              la force de la culture et de la solidarité combinées, et démontre
-              comment les jeunes font de leur générosité une véritable expression
-              de respect pour l’humain.
-            </p>
-          </div>
-        </div>
-
-        {/* Images Column */}
-        <div className="col-lg-4">
-          <div className="row g-3">
-            <div className="col-12">
-              <Image
-                src="/img/blog/art10.jpg"
-                alt="Caravane Humanitaire Image 1"
-                width={600}
-                height={400}
-                className="img-fluid rounded shadow-sm"
-                style={{ objectFit: "cover" }}
-              />
+      <div className="container py-5">
+        <div className="row g-4 mb-5 align-items-start">
+          {/* Main Card */}
+          <div className="col-lg-8">
+            <div
+              className="bg-light p-4 rounded shadow-sm h-100"
+              style={{ backgroundColor: "#fff0f6" }}
+            >
+              <p className="mb-2 text-muted">
+                <i className="fa fa-calendar-alt text-primary me-2"></i>18 mai
+                2025 |
+                <i className="fa fa-map text-primary ms-2 me-2"></i>Douar
+                Bouarous |
+                <i className="fa fa-user-edit text-primary me-1"></i>Douae
+                Ghoulaichi
+              </p>
+              <h3 className="mb-3 text-primary">
+                • Une caravane humanitaire primée pour son impact culturel et
+                social
+              </h3>
+              <p>
+                Le 18 mai 2025 restera une date marquante pour le club Rotaract
+                FST Fès, qui a organisé une caravane humanitaire au Douar
+                Bouarous. Cette initiative, saluée pour son impact humain et
+                culturel, a valu au club la 3ème place du{" "}
+                <strong>BEST CULTURE PROJECT</strong> au niveau du district,
+                consacrant ainsi l’engagement des jeunes bénévoles en faveur des
+                populations vulnérables.
+              </p>
+              <p>
+                Dès 10h du matin, la caravane a démarré par la distribution des
+                aides matérielles (vêtements, couvertures, etc…) soigneusement
+                préparés. Les habitants ont accueilli nos membres avec chaleur et
+                gratitude, créant une atmosphère de partage et de fraternité.
+              </p>
+              <p>
+                Nos membres du club ne se sont pas limités à la remise de dons :
+                ils ont pris le temps de discuter avec les familles et d’écouter
+                leurs récits. Une visite de <em>Dar Al Fatat</em> a aussi permis
+                de constater les difficultés auxquelles élèves et enseignants font
+                face au quotidien.
+              </p>
+              <p>
+                La journée a été marquée par des instants de partage authentiques
+                : discussions intergénérationnelles, sourires des enfants, et
+                gratitude exprimée par les plus âgés.{" "}
+                <em>&quot;Al Qaïd&quot;</em>, le chef de la commune rurale, a
+                souligné dans son discours l’importance d’un tel appui pour une
+                communauté qui endure des conditions de vie difficiles.
+              </p>
+              <p>
+                Loin de se limiter à son effet concret, cette action met en
+                lumière la force de la culture et de la solidarité combinées, et
+                démontre comment les jeunes font de leur générosité une véritable
+                expression de respect pour l’humain.
+              </p>
             </div>
-            <div className="col-12">
-              <div
-                style={{
-                  height: "300px",
-                  width: "100%",
-                  position: "relative",
-                  overflow: "hidden",
-                }}
-              >
+          </div>
+
+          {/* Images Column */}
+          <div className="col-lg-4">
+            <div className="row g-3 h-100">
+              <div className="col-12">
                 <Image
-                  src="/img/blog/prix.jpg"
-                  alt="Prix Award"
-                  fill
-                  className="rounded shadow-sm"
-                  style={{
-                    objectFit: "cover",
-                    objectPosition: "center",
-                  }}
+                  src="/img/blog/art10.jpg"
+                  alt="Caravane Humanitaire Image 1"
+                  width={600}
+                  height={400}
+                  className="img-fluid rounded shadow-sm"
+                  style={{ objectFit: "cover" }}
                 />
+              </div>
+              <div className="col-12">
+                <div
+                  style={{
+                    height: "300px",
+                    width: "100%",
+                    position: "relative",
+                    overflow: "hidden",
+                  }}
+                >
+                  <Image
+                    src="/img/blog/prix.jpg"
+                    alt="Prix Award"
+                    fill
+                    className="rounded shadow-sm"
+                    style={{
+                      objectFit: "cover",
+                      objectPosition: "center",
+                    }}
+                  />
+                </div>
               </div>
             </div>
           </div>
